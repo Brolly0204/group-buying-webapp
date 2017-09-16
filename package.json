@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 3003 --open --progress --colors",
-    "build": "webpack -p"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --port 3003 --progress --colors --inline",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors",
+    "prod": "cross-env NODE_ENV=production webpack -p"
   },
   "repository": "https://github.com/zhufengzhufeng/zhufeng_app.git",
   "author": "pamzer156 <1035465285@qq.com>",
@@ -35,6 +36,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "cross-env": "^5.0.5",
     "extract-text-webpack-plugin": "^2.1.0",
     "postcss-loader": "^2.0.5"
   }
