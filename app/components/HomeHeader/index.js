@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './index.less';
 
 export default class HomeHeader extends Component {
     render() {
         return (
             <div className={'home-header back'}>
-                <div className='city'>
+                <Link to={'/city'} className='city'>
                     {this.props.cityName}
                     <i className='iconfont icon-unfold'></i>
-                </div>
+                </Link>
                 <div className='search'>
                     <i className='iconfont icon-search'></i>
-                    <input type="text"/>
+                    <input type="text" placeholder={'搜索商家、品类或商圈'}/>
                 </div>
+                <Link to='/login'>
                 <div className='profile'>
                     <i className="iconfont icon-people"></i>
                 </div>
+                </Link>
             </div>
         )
     }

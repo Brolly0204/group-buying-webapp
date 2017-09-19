@@ -1,0 +1,86 @@
+@btnColor: #e9203d;
+.order-list-container {
+  padding: 0 10px;
+  .order-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+
+    .order-list-img {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .order-list-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+
+    .order-list-evaluate {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        font-weight: 600;
+      }
+
+      .btn-unselect,
+      .order-btn {
+        border: none;
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        background-color: @btnColor;
+      }
+
+      .btn-unselect {
+        background-color: #ccc;
+      }
+    }
+  }
+  .order-list-comment {
+     .comment-text {
+       width: 100%;
+       margin: 0 auto 10px;
+       border: 1px solid rgba(204, 204, 204, 0.56);
+       user-select: none;
+     }
+     button {
+        width: 65px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border: none;
+        color: #fff;
+     }
+     button:nth-of-type(1) {
+       background-color: @btnColor;
+     }
+     button:nth-of-type(2) {
+       margin-left: 15px;
+       background-color: #999;
+     }
+  }
+}

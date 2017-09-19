@@ -1,0 +1,38 @@
+.swiper-container {
+  background-color: #fff;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      width: 20%;
+      text-align: center;
+      line-height: 25px;
+      flex-direction: column;
+      i {
+        font-size: 24px;
+        color: #e9203d;
+      }
+      span {
+        color: #666;
+      }
+    }
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    li {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin: 5px;
+      background-color: #ccc;
+    }
+    .active {
+      background-color: #e9203d;
+    }
+  }
+}

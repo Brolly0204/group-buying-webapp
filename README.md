@@ -57,3 +57,8 @@ $ yarn add swipe-js-iso react-swipe
 
 ## 配置多入口 verdor
 - 抽离第三方库
+
+## 启动mongodb
+```
+sudo mongod --dbpath=/data/db
+```
